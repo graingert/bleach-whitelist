@@ -13,14 +13,14 @@ Installation
 ------------
 ::
 
-    pip install bleach-whitelist
+    pip install bleach-allowed-list
 
 Use
 ---
 ::
 
     import bleach
-    from bleach_whitelist import print_tags, print_attrs, all_styles
+    from bleach_allowed_list import print_tags, print_attrs, all_styles
 
     bleach.clean(raw_html, print_tags, print_attrs, all_styles)
 
@@ -33,8 +33,8 @@ Properties:
 - ``all_styles``: A list of all CSS properties supported by major browsers.
 - ``standard_styles``: A list of standard (non-vendor-specific) CSS properaties.
 
-See `bleach_whitelist.py <https://github.com/yourcelf/bleach-whitelist/blob/master/bleach_whitelist/bleach_whitelist.py>`_ for more.
+See `bleach_allowed_list.py <https://github.com/yourcelf/bleach-allowed-list/blob/master/bleach_allowed_list/bleach_allowed_list.py>`_ for more.
 
 Have improvements or lists of tags suitable for other purposes?  Please send a
-pull request!  Let's build a few good task-specific whitelists rather than
+pull request!  Let's build a few good task-specific allowed-list rather than
 reinventing these lists every time.
